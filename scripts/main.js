@@ -21,11 +21,11 @@
       // telling the body about the direction for the animation
       if (gamma > 0) {
           document.body.setAttribute('data-moving', 'left');
-          line.style.width = (gamma * 1.1) + 'px';
+          line.style.width = (-gamma * 1.1) + 'px';
           line.style.transform = 'translateX(' + (gamma*.1) + 'px)';
       }
       if (gamma < 0) {
-          line.style.width = (-gamma * 0.5) + 'px';
+          line.style.width = (gamma * 0.5) + 'px';
           document.body.setAttribute('data-moving', 'right');
       }
 
