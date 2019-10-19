@@ -42,6 +42,7 @@ body {
     left: 50%;
     right: auto;
 }
-[data-moving='left'] .drone--top {
+
+/* [data-moving='left'] .drone--top {
     transform-origin: bottom left;
-}
+} */

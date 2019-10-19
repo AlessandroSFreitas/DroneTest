@@ -25,11 +25,11 @@
         line.style.transform = 'translateZ(5px)';
       }
 
-      if (alpha < 0) {
-        document.body.setAttribute('data-moving', 'left');
-        line.style.width = (-alpha * 1.1) + 'px';
-        line.style.transform = 'translateZ(-5px)';
-      }
+      // if (alpha < 0) {
+      //   document.body.setAttribute('data-moving', 'left');
+      //   line.style.width = (-alpha * 1.1) + 'px';
+      //   line.style.transform = 'translateZ(-5px)';
+      // }
 
       // adding wipplash effect
       // wip = (alpha - lastZ)/wipDivizor;
@@ -43,7 +43,7 @@
       // }, 400);
 
       // and now we store the gamma
-      lastZ = alpha;
+      // lastZ = alpha;
     }
 
     // gatting farther or closer (Eixo X)
