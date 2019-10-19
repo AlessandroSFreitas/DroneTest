@@ -70,7 +70,8 @@
           // Here you can get the string of what you told
           const command = document.querySelector('.command');
           const content = event.results[i][0].transcript.trim();
-          if (command == content) {
+          if (content == 'stop') {
+            console.log(content == 'stop')
             document.body.setAttribute('command', 'stop');
           }
           output.textContent = content;
