@@ -6,7 +6,7 @@ html, body {
 }
 
 body {
-    background-color;: white;
+    background: url(../images/bg-2.png);
     background-size: cover;
     background-position: center bottom;
 }
@@ -26,7 +26,7 @@ body {
 }
 
 .balloon--top {
-    background-image: url(https://www.pinclipart.com/picdir/middle/53-531158_black-outline-vector-camera-on-white-shutterstockcom-phantom.png);
+    background-image: url(../images/balloon.png);
     background-size: 100% auto;
     background-repeat: no-repeat;
     width: 100%;
