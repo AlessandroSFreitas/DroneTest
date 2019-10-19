@@ -23,6 +23,7 @@ body {
     max-width: 140%;
     transform-origin: bottom center;
     transition: all ease-out .4s;
+    transform: rotate(0deg);
 }
 
 .balloon--top {
