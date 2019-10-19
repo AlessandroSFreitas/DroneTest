@@ -68,7 +68,11 @@
       for (let i = event.resultIndex; i < event.results.length; i++) {
         if (event.results[i].isFinal) {
           // Here you can get the string of what you told
+          const command = document.querySelector('.command');
           const content = event.results[i][0].transcript.trim();
+          if (command == content) {
+            document.body.setAttribute('command', 'stop');
+          }
           output.textContent = content;
         }
       }

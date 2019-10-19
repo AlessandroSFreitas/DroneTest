@@ -36,7 +36,11 @@ body {
   z-index: 1;
 }
 
-#command {
+.command {
+  background-image: none;
+}
+
+[command='stop'] .command {
   background-image: url(../images/stop.jpeg);
 }
 
