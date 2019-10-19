@@ -17,10 +17,10 @@ body {
     left: 0;
     right: 0;
     margin: auto;
-    width: 200px;
+    width: 500px;
     height: 500px;
     max-height: 60%;
-    max-width: 20%;
+    max-width: 140%;
     transform-origin: bottom center;
     transition: all ease-out .4s;
 }
