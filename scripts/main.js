@@ -76,9 +76,7 @@
   };
 
   startBtn.addEventListener('click', () => start())
-
-  command = document.querySelector('.command')
   if (output == 'stop') {
-    command = output
+    document.body.setAttribute('command', 'stop');
   }
 })();
