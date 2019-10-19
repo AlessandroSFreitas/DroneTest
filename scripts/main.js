@@ -24,6 +24,11 @@
         document.body.setAttribute('data-moving', 'right');
       }
 
+      if (alpha < 0) {
+        drone.style.width = (alpha * 0.5) + 'px';
+        document.body.setAttribute('data-moving', 'left');
+      }
+
       // if (alpha < 0) {
       //   document.body.setAttribute('data-moving', 'left');
       //   line.style.width = (-alpha * 1.1) + 'px';

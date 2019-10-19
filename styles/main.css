@@ -40,9 +40,11 @@ body {
     border-width: 0 1px 0 0;
     transform-origin: bottom right;
     left: 50%;
-    right: auto;
+    left: auto;
 }
 
-/* [data-moving='left'] .drone--top {
-    transform-origin: bottom left;
-} */
+[data-moving='left'] .drone--top {
+  transform-origin: bottom left;
+  right: 50%;
+  right: auto;
+}
