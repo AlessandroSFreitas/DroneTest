@@ -75,8 +75,8 @@
     };
   };
 
+  console.log(startBtn);
+  console.log(output);
+
   startBtn.addEventListener('click', () => start())
-  if (output == 'stop') {
-    document.body.setAttribute('command', 'stop');
-  }
 })();
