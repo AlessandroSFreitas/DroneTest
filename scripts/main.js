@@ -58,7 +58,7 @@
   const startBtn = document.querySelector('#start');
   const output = document.querySelector('#output');
   function start() {
-    const recognition = new webkitSpeechRecognition();
+    const recognitihighlighton = new webkitSpeechRecognition();
     recognition.interimResults = true;
     recognition.lang = "en-US";
     recognition.continuous = true;
@@ -68,7 +68,11 @@
       for (let i = event.resultIndex; i < event.results.length; i++) {
         if (event.results[i].isFinal) {
           // Here you can get the string of what you told
+          $('#command').hide();
           const content = event.results[i][0].transcript.trim();
+          if (content == 'stop') {
+            $('#command').show();
+          }
           output.textContent = content;
         }
       }
