@@ -74,5 +74,11 @@
       }
     };
   };
-  startBtn.addEventListener('click', () => start());
+
+  startBtn.addEventListener('click', () => start())
+
+  command = document.querySelector('.command')
+  if (output == 'stop') {
+    command = output
+  }
 })();
