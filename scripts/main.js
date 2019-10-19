@@ -15,7 +15,7 @@
     var beta     = event.beta;
     var gamma    = event.gamma;
 
-    if(Math.abs(lastZ - gamma) > minDiff){
+    if(Math.abs(lastZ - alpha) > minDiff){
       clearTimeout(tm);
 
       // telling the body about the direction for the animation
@@ -46,7 +46,7 @@
       lastZ = alpha;
     }
 
-    // gatting farther or closer
+    // gatting farther or closer (Eixo X)
     if (Math.abs(lastY - beta) > minDiff) {
       drone.style.width = (beta + 200) + 'px';
       lastY = beta;
