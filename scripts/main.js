@@ -34,7 +34,7 @@
             // adding wipplash effect
             wip = (gamma - lastZ)/wipDivizor;
 
-            // rotating the balloon
+            // rotating the drone
             balloon.style.transform = "rotateZ("+(-1*(gamma + wip))+"deg)";
 
             tm = setTimeout(_=>{
