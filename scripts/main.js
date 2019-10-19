@@ -20,13 +20,13 @@
 
       // telling the body about the direction for the animation
       if (gamma > 0) {
-        document.body.setAttribute('data-moving', 'right');
+        document.body.setAttribute('data-moving', 'left');
         balloon.style.width = (-gamma * 1.1) + 'px';
         balloon.style.transform = 'translateX(' + (gamma*.1) + 'px)';
       }
       if (gamma < 0) {
         balloon.style.width = (gamma * 0.5) + 'px';
-        document.body.setAttribute('data-moving', 'left');
+        document.body.setAttribute('data-moving', 'right');
       }
 
       // adding wipplash effect
