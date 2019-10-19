@@ -69,14 +69,12 @@
         if (event.results[i].isFinal) {
           // Here you can get the string of what you told
           const content = event.results[i][0].transcript.trim();
+          console.log(content);
           output.textContent = content;
         }
       }
     };
   };
-
-  console.log(startBtn);
-  console.log(output);
 
   startBtn.addEventListener('click', () => start())
 })();
