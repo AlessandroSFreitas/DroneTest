@@ -37,7 +37,7 @@ body {
 }
 
 .command {
-  background-image: url(../images/imagem.png);
+  background-image: url(../images/stop.jpeg);
 }
 
 [data-moving='left'] .drone--top {
