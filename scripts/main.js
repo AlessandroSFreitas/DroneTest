@@ -19,14 +19,14 @@
       clearTimeout(tm);
 
       // telling the body about the direction for the animation
-      if (alpha > 0) {
+      if (alpha < 0) {
         document.body.setAttribute('data-moving', 'right');
-        drone.style.width = (alpha * 1.1) + 'px';
-        drone.style.transform = 'translateX(' + (alpha*0.05) + 'px)';
+        line.style.width = (alpha * 1.1) + 'px';
+        line.style.transform = 'translateX(' + (alpha*0.05) + 'px)';
       }
 
-      if (alpha < 0) {
-        drone.style.width = (alpha * 0.5) + 'px';
+      if (alpha > 0) {
+        line.style.width = (alpha * 0.5) + 'px';
         document.body.setAttribute('data-moving', 'left');
       }
 
