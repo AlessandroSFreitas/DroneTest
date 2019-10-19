@@ -1,6 +1,6 @@
 (()=>{
-  var balloon = document.querySelector('#balloon'),
-    line = document.querySelector('.balloon--top'),
+  var drone = document.querySelector('#drone'),
+    line = document.querySelector('.drone--top'),
     lastZ = 0,
     lastY = 0,
     minDiff = 2,
@@ -21,11 +21,11 @@
       // telling the body about the direction for the animation
       if (gamma > 0) {
         document.body.setAttribute('data-moving', 'left');
-        balloon.style.width = (-gamma * 1.1) + 'px';
-        balloon.style.transform = 'translateX(' + (gamma*.1) + 'px)';
+        drone.style.width = (-gamma * 1.1) + 'px';
+        drone.style.transform = 'translateX(' + (gamma*.1) + 'px)';
       }
       if (gamma < 0) {
-        balloon.style.width = (gamma * 0.5) + 'px';
+        drone.style.width = (gamma * 0.5) + 'px';
         document.body.setAttribute('data-moving', 'right');
       }
 
@@ -33,11 +33,11 @@
       wip = (gamma - lastZ)/wipDivizor;
 
       // rotating the drone
-      balloon.style.transform = "rotateZ("+(-1*(gamma + wip))+"deg)";
+      drone.style.transform = "rotateZ("+(-1*(gamma + wip))+"deg)";
 
       tm = setTimeout(_=>{
         // ending the wipplash effect
-        balloon.style.transform = "rotateZ("+(-1*(gamma - wip))+"deg)";
+        drone.style.transform = "rotateZ("+(-1*(gamma - wip))+"deg)";
       }, 400);
 
       // and now we store the gamma
@@ -46,7 +46,7 @@
 
     if (Math.abs(lastY - beta) > minDiff) {
       // gatting farther or closer
-      balloon.style.width = (-beta + 200) + 'px';
+      drone.style.width = (beta + 200) + 'px';
       lastY = beta;
     }
   }
