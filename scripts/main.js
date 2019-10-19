@@ -55,7 +55,6 @@
 })();
 
 (() => {
-  const command = document.querySelector('.command');
   const startBtn = document.querySelector('#start');
   const output = document.querySelector('#output');
   function start() {
@@ -70,11 +69,8 @@
         if (event.results[i].isFinal) {
           // Here you can get the string of what you told
           const content = event.results[i][0].transcript.trim();
-          console.log(content);
-          if (content == 'stop') {
-            document.body.setAttribute('command', 'stop');
-            command = content
-          }
+          const command = document.querySelector('.command');
+          command = content;
           output.textContent = content;
         }
       }
