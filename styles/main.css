@@ -23,7 +23,6 @@ body {
     max-width: 140%;
     transform-origin: bottom center;
     transition: all ease-out .4s;
-    transform: rotate(0deg);
 }
 
 .drone--top {
@@ -37,25 +36,12 @@ body {
     z-index: 1;
 }
 
-.balloon--line {
-    border: solid 1px black;
-    border-width: 0 0 0 1px;
-    width: 3px;
-    height: 90%;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    z-index: 8;
-    border-radius: 50%;
-    transition: width linear .2s;
-}
-
-[data-moving='left'] .drone--top {
+[data-moving='right'] .drone--top {
     border-width: 0 1px 0 0;
-    transform-origin: bottom right;
+    transform-origin: right;
     right: 50%;
     left: auto;
 }
-[data-moving='right'] .drone--top {
+[data-moving='left'] .drone--top {
     transform-origin: bottom left;
 }
