@@ -58,7 +58,7 @@
   const startBtn = document.querySelector('#start');
   const output = document.querySelector('#output');
   function start() {
-    const recognitihighlighton = new webkitSpeechRecognition();
+    const recognition = new webkitSpeechRecognition();
     recognition.interimResults = true;
     recognition.lang = "en-US";
     recognition.continuous = true;
