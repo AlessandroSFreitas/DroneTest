@@ -42,6 +42,7 @@ body {
 
 [command='stop'] .command {
   background-image: url(../images/stop.jpeg);
+  background-repeat: no-repeat;
 }
 
 [data-moving='left'] .drone--top {
