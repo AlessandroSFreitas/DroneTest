@@ -33,11 +33,11 @@
       wip = (gamma - lastZ)/wipDivizor;
 
       // rotating the balloon
-      balloon.style.transform = "rotateZ("+(-1*(gamma + wip))+"deg)";
+      drone.style.transform = "rotateZ("+(-1*(gamma + wip))+"deg)";
 
       tm = setTimeout(_=>{
           // ending the wipplash effect
-          balloon.style.transform = "rotateZ("+(-1*(gamma - wip))+"deg)";
+          drone.style.transform = "rotateZ("+(-1*(gamma - wip))+"deg)";
       }, 400);
 
       // and now we store the gamma
