@@ -38,9 +38,9 @@ body {
 
 [data-moving='right'] .drone--top {
     border-width: 0 1px 0 0;
-    transform-origin: right;
-    right: 50%;
-    left: auto;
+    transform-origin: bottom right;
+    left;: 50%;
+    right: auto;
 }
 [data-moving='left'] .drone--top {
     transform-origin: bottom left;
