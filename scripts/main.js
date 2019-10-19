@@ -36,13 +36,10 @@
       // rotating the balloon
       // balloon.style.transform = "rotateZ("+(1*(alpha + wip))+"deg)";
 
-      tm = setTimeout(_=>{
-        // ending the wipplash effect
-        drone.style.transform = "rotateX("+(-1*(gamma - wip))+"deg)";
-      }, 400);
+      tm = setTimeout(_=>{}, 400);
 
       // and now we store the gamma
-      lastY = alpha;
+      lastZ = alpha;
     }
 
     // gatting farther or closer (Eixo X)
