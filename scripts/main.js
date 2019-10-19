@@ -1,6 +1,6 @@
 (()=>{
     var balloon = document.querySelector('#balloon'),
-        line = document.querySelector('.balloon--line'),
+        line = document.querySelector('.balloon--top'),
         lastZ = 0,
         lastY = 0,
         minDiff = 2,

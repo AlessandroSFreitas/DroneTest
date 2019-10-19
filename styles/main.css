@@ -49,13 +49,13 @@ body {
     transition: width linear .2s;
 }
 
-[data-moving='left'] .balloon--line {
+[data-moving='left'] .balloon--top {
     border-width: 0 1px 0 0;
     transform-origin: bottom right;
     right: 50%;
     left: auto;
 }
-[data-moving='right'] .balloon--line {
+[data-moving='right'] .balloon--top {
     transform-origin: bottom left;
 }
 
