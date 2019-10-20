@@ -37,6 +37,7 @@ body {
   max-width: 140%;
   transform-origin: bottom center;
   transition: all ease-out .4s;
+  background-image: url(../images/stop.png);
 }
 
 .drone--top {
