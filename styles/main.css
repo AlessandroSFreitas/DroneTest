@@ -41,6 +41,7 @@ body {
 }
 
 [command='stop'] .command {
+  align-items: center;
   background-image: url(../images/stop.png);
   background-repeat: no-repeat;
 }
