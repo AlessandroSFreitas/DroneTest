@@ -74,6 +74,10 @@
             console.log(content == 'stop')
             document.body.setAttribute('command', 'stop');
           }
+
+          if (content == 'run') {
+            document.body.setAttribute('command', 'run');
+          }
           output.textContent = content;
         }
       }
