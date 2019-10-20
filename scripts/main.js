@@ -29,15 +29,12 @@
           document.body.setAttribute('data-moving', 'right');
       }
 
-      // adding wipplash effect
       wip = (gamma - lastZ)/wipDivizor;
 
-      // rotating the balloon
       drone.style.transform = "rotateZ("+(-1*(gamma + wip))+"deg)";
 
       tm = setTimeout(_=>{
-          // ending the wipplash effect
-          drone.style.transform = "rotateZ("+(-1*(gamma - wip))+"deg)";
+        drone.style.transform = "rotateZ("+(-1*(gamma - wip))+"deg)";
       }, 400);
 
       // and now we store the gamma
@@ -75,8 +72,8 @@
             document.body.setAttribute('command', 'stop');
           }
 
-          if (content == 'run') {
-            document.body.setAttribute('command', 'run');
+          if (content == 'go') {
+            document.body.setAttribute('command', 'go');
           }
           output.textContent = content;
         }
