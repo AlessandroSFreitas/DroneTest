@@ -25,11 +25,6 @@ body {
     transition: all ease-out .4s;
 }
 
-[command='stop'] [data-moving=''] .drone--top {
-  background-image: url(../images/stop.png);
-  background-repeat: no-repeat;
-}
-
 .drone--top {
   background-image: url(../images/imagem.png);
   background-size: 100% auto;
